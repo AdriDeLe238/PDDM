@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".TitleControl">
+
+    <TextView
+        android:textColor="#FFFFFF"
+        android:background="#000000"
+        android:id="@+id/tituloApp"
+        android:layout_width="122dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/magicline_proy"
+        android:text="@string/nombre"
+        android:textSize="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/logoApp"
+        android:background="#000000"
+        android:layout_width="99dp"
+        android:layout_height="35dp"
+        android:src="@drawable/camara" />
+
+</LinearLayout>
