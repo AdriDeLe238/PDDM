@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.*
 import android.net.Uri
+import android.provider.MediaStore
 import java.io.File
 
 object ImageControler {
@@ -15,6 +16,8 @@ object ImageControler {
     }
 
     fun saveImage(context: Context, id: Long, uri: Uri){
+
+       // MediaStore.Images.Media.insertImage(getContentResolver(), yourBitmap, yourTitle , yourDescription);
 
         val file = File(context.filesDir, id.toString())
 
@@ -538,5 +541,4 @@ object ImageControler {
         val bitmapConvertido : Bitmap = convolucion.convolucion(btp)
         return bitmapConvertido
     }
-
 }
