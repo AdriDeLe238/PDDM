@@ -8,15 +8,14 @@
     tools:context=".TitleControl">
 
     <TextView
-        android:textColor="#FFFFFF"
-        android:background="#000000"
         android:id="@+id/tituloApp"
-        android:layout_width="122dp"
-        android:layout_height="41dp"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:background="#000000"
         android:fontFamily="@font/magicline_proy"
         android:text="@string/nombre"
-        android:textSize="30dp"
-        />
+        android:textColor="#FFFFFF"
+        android:textSize="50dp" />
 
     <ImageView
         android:id="@+id/logoApp"

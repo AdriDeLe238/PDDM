@@ -13,111 +13,20 @@
     tools:context="com.example.prueba_uno.MainActivity">
 
     <com.example.prueba_uno.TitleControl
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
-   <!-- <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="IMAGEN"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/textView"
-        android:textColor="#FFFFFF"
-        />-->
-
-
-   <!-- <Button
-        android:id="@+id/Edge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginBottom="-3dp"
-        android:background="@color/colorAccent"
-        android:text="EDGE DETECTION"
-        android:textColor="#FFFFFF" />-->
+        android:layout_width="366dp"
+        android:layout_height="58dp" />
 
     <com.example.prueba_uno.zoomzoom
         android:id="@+id/imageSelect_iv"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="215dp"
+        android:layout_height="302dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="66dp"
-        android:layout_marginTop="79dp"
-        android:layout_marginEnd="80dp"
-        android:src="@drawable/camara" />
-
-  <!--  <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="SMOOTHING"
-        android:layout_alignParentBottom="false"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:background="@color/colorAccent"
-        android:textColor="#FFFFFF"
-        android:id="@+id/smoothing"/>
-
-    <Button
-        android:id="@+id/embossing"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="false"
-        android:layout_marginTop="55dp"
-        android:background="@color/colorAccent"
-        android:text="EMBOSSING"
-        android:textColor="#FFFFFF" />
-
-   <Button
-        android:id="@+id/GB"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginBottom="60dp"
-        android:background="@color/colorAccent"
-        android:text="GaussianBlur"
-        android:textColor="#FFFFFF" />
-
-    <Button
-        android:id="@+id/sharpen"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="120dp"
-        android:background="@color/colorAccent"
-        android:text="Sharpen"
-        android:textColor="#FFFFFF" />
-
-    <Button
-        android:id="@+id/MR"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="180dp"
-        android:background="@color/colorAccent"
-        android:text="Mean Removal"
-        android:textColor="#FFFFFF" />-->
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="106dp"
+        android:src="@drawable/camara" />
 
     <ImageView
         android:id="@+id/guardar"
@@ -126,18 +35,18 @@
         android:layout_below="@+id/imageSelect_iv"
         android:layout_alignBottom="@+id/imageSelect_iv"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="-273dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="223dp"
+        android:layout_marginTop="-360dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="310dp"
         app:srcCompat="@drawable/disquete" />
 
     <Spinner
         android:id="@+id/filtrosBasicos"
-        android:layout_width="135dp"
-        android:layout_height="44dp"
+        android:layout_width="125dp"
+        android:layout_height="51dp"
         android:layout_below="@+id/imageSelect_iv"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="205dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="201dp"
         android:layout_toEndOf="@+id/filtrosConvolucion"
         android:background="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
@@ -145,24 +54,24 @@
 
     <Spinner
         android:id="@+id/filtrosConvolucion"
-        android:layout_width="135dp"
-        android:layout_height="44dp"
+        android:layout_width="146dp"
+        android:layout_height="50dp"
         android:layout_alignBottom="@+id/imageSelect_iv"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginBottom="-250dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="-252dp"
         android:background="#FFFFFF"
         app:layout_constraintStart_toEndOf="@+id/filtrosBasicos"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/filtrosExtras"
-        android:layout_width="135dp"
-        android:layout_height="44dp"
+        android:layout_width="91dp"
+        android:layout_height="51dp"
         android:layout_alignBottom="@+id/imageSelect_iv"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="250dp"
-        android:layout_marginBottom="-250dp"
+        android:layout_marginStart="289dp"
+        android:layout_marginBottom="-252dp"
         android:background="#FFFFFF"
         app:layout_constraintStart_toEndOf="@+id/filtrosBasicos"
         app:layout_constraintTop_toTopOf="parent" />
